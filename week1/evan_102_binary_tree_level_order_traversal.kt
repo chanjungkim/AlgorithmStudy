@@ -12,8 +12,6 @@ class Solution {
     fun levelOrder(root: TreeNode?): List<List<Int>> {
         val queue = LinkedList<TreeNode?>()
         var result = mutableListOf<List<Int>>()
-        var left = mutableListOf<Int>()
-        var right = mutableListOf<Int>()
         
         if(root != null){
             queue.add(root)
